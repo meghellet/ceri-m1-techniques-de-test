@@ -20,6 +20,9 @@ jobs:
     working_directory: ~/repo
 
     environment:
+     filters:
+            branches:
+              only: master
       # Customize the JVM maximum heap limit
       JVM_OPTS: -Xmx3200m
       TERM: dumb
@@ -44,3 +47,4 @@ jobs:
 
       # run tests!
       - run: gradle test
+      
