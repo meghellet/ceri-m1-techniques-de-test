@@ -28,7 +28,4 @@ workflows:
   tdt:
     jobs:
       - build
-          filters:
-            branch:
-              only: master
       - test
