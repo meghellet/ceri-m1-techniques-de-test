@@ -21,7 +21,7 @@ jobs:
       - run:
           name: Test
           command: mvn test
-
+  working_directory: "/home/edissyum/git/ceri-m1-techniques-de-test/mon_application/mon-appli/"
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
