@@ -9,7 +9,7 @@ import java.util.List;
  * 
  * @author fv
  */
-public interface IPokedex extends IPokemonMetadataProvider, IPokemonFactory {
+public interface IPokedex extends IPokemonFactory {
 	
 	/**
 	 * Returns the number of pokemon this pokedex contains.

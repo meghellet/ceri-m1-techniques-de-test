@@ -1,4 +1,4 @@
-package org.exemple.demo;
+package fr.univavignon.pokedex.api;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
