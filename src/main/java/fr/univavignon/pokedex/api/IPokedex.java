@@ -10,6 +10,7 @@ import java.util.List;
  * @author fv
  */
 public interface IPokedex extends IPokemonFactory {
+	//Notre conteneur, qui étend les deux interfaces précédentes, qu’il fournit à travers le pattern "Décorateur".
 	
 	/**
 	 * Returns the number of pokemon this pokedex contains.

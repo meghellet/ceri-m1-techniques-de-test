@@ -6,6 +6,7 @@ package fr.univavignon.pokedex.api;
  * @author fv
  */
 public interface IPokemonFactory {
+	//Permet de créer un individu
 
 	/**
 	 * Creates a pokemon instance computing it IVs.

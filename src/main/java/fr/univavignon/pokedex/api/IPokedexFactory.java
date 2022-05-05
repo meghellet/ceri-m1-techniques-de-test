@@ -6,6 +6,7 @@ package fr.univavignon.pokedex.api;
  * @author fv
  */
 public interface IPokedexFactory {
+	//Permet de créer une instance de IPokedex.
 
 	/**
 	 * Creates a new pokedex instance using the given 
