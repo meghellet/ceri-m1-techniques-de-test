@@ -33,7 +33,7 @@ public class IPokemonMetadataProviderTest extends TestCase {
             //on renvoie bulbizarre lorsque on met l'index 133
             Mockito.doReturn(this.aquali).when(this.metaData).getPokemonMetadata(133);
             //on lance lexception lorsque l'index nest pas situé entre 0 et 150
-            Mockito.doThrow(new PokedexException("Un pokemon avec un tel index n'existe pas ! Tu n'es pas concentré ... ")).when(metaData).getPokemonMetadata(Mockito.intThat(index -> index < 0 || index > 150));
+            Mockito.doThrow(new PokedexException("Un pokemon avec cet index n'existe pas ! ")).when(metaData).getPokemonMetadata(Mockito.intThat(index -> index < 0 || index > 150));
             //on verifie que nous avons bulbizarre lorsque on met l'index 0
             assertEquals(this.bulbizarre, this.metaData.getPokemonMetadata(0));
             //on verifie que nous avons aquali lorsque on met l'index 133
