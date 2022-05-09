@@ -6,14 +6,15 @@ import java.util.List;
 
 public class Pokedex implements IPokedex{
 
+    IPokemonMetadataProvider PokemonMetadataProvider = null;
     ArrayList<Pokemon> listPokemons;
-    IPokemonMetadataProvider metadataProvider = null;
+
     IPokemonFactory pokemonFactory = null;
 
 
-    public Pokedex(IPokemonMetadataProvider metadataProvider, IPokemonFactory pokemonFactory) {
+    public Pokedex(IPokemonMetadataProvider PokemonMetadataProvider, IPokemonFactory pokemonFactory) {
         this.listPokemons = new ArrayList<>();
-        this.metadataProvider = metadataProvider;
+        this.PokemonMetadataProvider = PokemonMetadataProvider;
         this.pokemonFactory = pokemonFactory;
     }
 
