@@ -39,6 +39,10 @@ jobs:
           name: CheckStyle
           command: mvn -DskipTests checkstyle:checkstyle
 
+      - run:
+          name: Javadoc
+          command: mvn -DskipTests javadoc:javadoc
+
       # Then run your tests!
       - run:
           name: Test
