@@ -23,6 +23,7 @@ UE Technique de test
 
 [![codecov](https://codecov.io/gh/meghellet/ceri-m1-techniques-de-test/branch/master/graph/badge.svg?token=GBTOGXVSDL)](https://codecov.io/gh/meghellet/ceri-m1-techniques-de-test)
 
+![Checkstyle](target/site/badges/checkstyle-result.svg)
 
 ## Introduction
 
