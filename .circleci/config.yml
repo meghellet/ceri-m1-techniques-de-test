@@ -42,6 +42,9 @@ jobs:
       - run:
           name: Javadoc
           command: mvn -DskipTests javadoc:javadoc
+      - persist_to_workspace:
+          root: target/site/
+          paths: apidocs
 
       # Then run your tests!
       - run:
